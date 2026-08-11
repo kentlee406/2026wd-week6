@@ -209,7 +209,99 @@
   line-height: 1.6;
 }
 
+.new-in {
+  // 最新上架區塊底圖
+  background-image: url("../images/index-bg/index-new-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // 限制手機橫向滑動僅發生在卡片容器內
+  overflow-x: hidden;
+}
+
+.new-in-scroll {
+  // 手機版橫向滑動容器，隱藏各瀏覽器捲軸
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.new-in-grid {
+  // 手機先以橫向卡片列呈現
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.new-tool-card {
+  // 每張卡片固定 259px，並加入毛玻璃效果
+  flex: 0 0 259px;
+  width: 259px;
+  min-height: 228px;
+  border: 1px solid map-get($transparent-colors, 200);
+  background-color: map-get($transparent-colors, 100);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 12px;
+  padding: 24px;
+  color: map-get($neutral-colors, 0);
+  scroll-snap-align: start;
+}
+
+.new-tool-card__icon {
+  // 工具圖示固定尺寸避免卡片跳動
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.new-tool-card__title {
+  margin-bottom: 8px;
+  font-size: $h3-font-size;
+  font-weight: 700;
+}
+
+.new-tool-card__category {
+  margin-bottom: 8px;
+  font-size: $body-font-size-md;
+  color: map-get($neutral-colors, 200);
+}
+
+.new-tool-card__desc {
+  margin-bottom: 0;
+  font-size: $body-font-size-md;
+  line-height: 1.6;
+}
+
 @media (min-width: map-get($container-max-widths, md)) {
+  .new-in-scroll {
+    // md 以上改為固定網格，不再需要橫向滑動
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .new-in-grid {
+    // 桌機版三欄二列
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .new-tool-card {
+    // 桌機版由欄寬控制卡片寬度
+    width: auto;
+    flex: initial;
+  }
+
   .editors-pick-scroll {
     overflow: visible;
     padding-bottom: 0;

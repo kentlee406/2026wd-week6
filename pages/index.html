@@ -25,7 +25,7 @@
       </div>
     </section>
     <section class="categories">
-      <div class="container py-8">
+      <div class="container py-7 py-md-8">
         <h2 class="h2">工具分類</h2>
         <p class="cr-n200 mb-5">依據使用情境快速找到適合你的 AI 工具</p>
         <!-- 分類卡片格線：手機2欄、桌機4欄，欄距 g-4 -->
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="editors-pick py-8">
+    <section class="editors-pick py-7 py-md-8">
       <div class="container">
         <h2 class="h2">本月精選</h2>
         <p class="cr-n200 mb-5">
@@ -247,9 +247,118 @@
         </div>
       </div>
     </section>
-    <section class="new-in"></section>
-    <section class="upload-ai"></section>
-    <section class="faq"></section>
+    <!-- 最新上架：桌機三欄二列；手機卡片 259px 橫向滑動 -->
+    <section class="new-in py-7 py-md-8">
+      <div class="container">
+        <!-- 區塊標題與說明 -->
+        <h2 class="h2 text-center">最新上架</h2>
+        <p class="cr-n200 text-center mb-5">看看大家最近都在關注哪些新工具</p>
+
+        <!-- 手機版可左右滑動，並隱藏捲軸；md 以上改為 3x2 格線 -->
+        <div class="new-in-scroll">
+          <div class="new-in-grid">
+            <!-- 卡片 1：WriteCraft AI -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/WriteCraft AI.png"
+                alt="WriteCraft AI"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">WriteCraft AI</h3>
+              <p class="new-tool-card__category">內容生成</p>
+              <p class="new-tool-card__desc">
+                快速產出文案，從社群貼文、部落格文章到產品介紹，依不同目的生成合適內容。
+              </p>
+            </article>
+
+            <!-- 卡片 2：PixelMind Studio -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/PixelMind Studio.png"
+                alt="PixelMind Studio"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">PixelMind Studio</h3>
+              <p class="new-tool-card__category">影像製作</p>
+              <p class="new-tool-card__desc">
+                只需輸入簡單描述，就能生成插畫、社群圖片與設計素材，適合缺乏設計資源的團隊與個人。
+              </p>
+            </article>
+
+            <!-- 卡片 3：CodePilot Pro -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/CodePilot Pro.png"
+                alt="CodePilot Pro"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">CodePilot Pro</h3>
+              <p class="new-tool-card__category">程式開發</p>
+              <p class="new-tool-card__desc">
+                專為工程師設計的 AI 助手，協助產生程式碼、解釋複雜邏輯，讓你專注在更高價值的開發工作。
+              </p>
+            </article>
+
+            <!-- 卡片 4：VideoFlow AI -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/VideoFlow AI.png"
+                alt="VideoFlow AI"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">VideoFlow AI</h3>
+              <p class="new-tool-card__category">影像製作</p>
+              <p class="new-tool-card__desc">
+                將文章或腳本轉換為影片，自動搭配畫面、字幕與音樂，適合快節奏的創作者或行銷團隊。
+              </p>
+            </article>
+
+            <!-- 卡片 5：InsightX Analyzer -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/InsightX Analyzer.png"
+                alt="InsightX Analyzer"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">InsightX Analyzer</h3>
+              <p class="new-tool-card__category">資料分析</p>
+              <p class="new-tool-card__desc">
+                快速整理資料、產出圖表與分析摘要，幫助你從複雜數據中找出關鍵洞察。
+              </p>
+            </article>
+
+            <!-- 卡片 6：AutoTasker -->
+            <article class="new-tool-card">
+              <img
+                src="/assets/images/AutoTasker.png"
+                alt="AutoTasker"
+                class="new-tool-card__icon"
+                loading="lazy"
+              />
+              <h3 class="new-tool-card__title">AutoTasker</h3>
+              <p class="new-tool-card__category">生產力工具</p>
+              <p class="new-tool-card__desc">
+                串接多種工具自動執行日常任務，減少人工操作錯誤，讓你把時間用在更重要的事情上。
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 區塊 CTA -->
+        <div class="text-center mt-4 mt-md-5">
+          <a href="./exploreAI.html" class="btn btn-subscribe-custom rounded-pill px-4 py-2"
+            >查看更多新工具</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="upload-ai py-7 py-md-8"></section>
+    <section class="faq py-7 py-md-8"></section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
