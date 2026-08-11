@@ -1,3 +1,3 @@
-import './assets/scss/all.scss';
-
-console.log('Hello world');
+import "/assets/scss/all.scss";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";

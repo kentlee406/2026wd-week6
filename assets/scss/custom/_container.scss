@@ -1,0 +1,13 @@
+// 1. 覆寫預設 Gutter（Bootstrap 預設全站 gutter，此處指定手機預設 16px）
+$grid-gutter-width: 1rem; // 16px
+
+// 2. 自訂 Breakpoints (若有需求) 與 Container Max Widths
+// 預設 desktop (xl / xxl) 下，Margin 312px 表示 Content + Gutter 區域限制在 1296px
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1296px // 設定 Desktop 最大寬度為 1296px
+);
+

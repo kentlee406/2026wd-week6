@@ -1,0 +1,156 @@
+// 基礎色盤 Map
+$neutral-colors: (
+  0: #ffffff,
+  100: #e8e8e9,
+  200: #bdbcc9,
+  300: #6a6978,
+  400: #4b4a52,
+  500: #18172c,
+  600: #100c24,
+);
+
+$transparent-colors: (
+  100: rgba(255, 255, 255, 0.08),
+  200: rgba(255, 255, 255, 0.12),
+);
+
+$success-colors: (
+  100: #d1e7dd,
+  200: #a3cfbb,
+  300: #479f76,
+);
+
+$warning-colors: (
+  100: #fff3cd,
+  200: #ffda6a,
+  300: #cc9a06,
+);
+
+$danger-colors: (
+  100: #fcf1f1,
+  200: #ea868f,
+  300: #dc3545,
+);
+
+$info-colors: (
+  100: #cff4fc,
+  200: #9eeaf9,
+  300: #3dd5f3,
+);
+
+$primary-colors: (
+  100: #eadcff,
+  200: #d2b4fe,
+  300: #b28de9,
+);
+
+@each $key, $value in $neutral-colors {
+  .bg-n#{$key} {
+    background-color: $value;
+  }
+  .cr-n#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $transparent-colors {
+  .bg-t#{$key} {
+    background-color: $value;
+  }
+  .cr-t#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $success-colors {
+  .bg-s#{$key} {
+    background-color: $value;
+  }
+  .cr-s#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $warning-colors {
+  .bg-w#{$key} {
+    background-color: $value;
+  }
+  .cr-w#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $danger-colors {
+  .bg-d#{$key} {
+    background-color: $value;
+  }
+  .cr-d#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $info-colors {
+  .bg-i#{$key} {
+    background-color: $value;
+  }
+  .cr-i#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $primary-colors {
+  .bg-p#{$key} {
+    background-color: $value;
+  }
+  .cr-p#{$key} {
+    color: $value;
+  }
+}
+
+body {
+  @extend .cr-n0, .bg-n600;
+}
+
+.text-primary-dark {
+  color: map-get($neutral-colors, 0);
+  background-color: map-get($neutral-colors, 600);
+}
+
+.text-primary-light {
+  color: map-get($neutral-colors, 600);
+  background-color: map-get($neutral-colors, 100);
+}
+
+.text-secondary-dark {
+  color: map-get($neutral-colors, 200);
+  background-color: map-get($neutral-colors, 600);
+}
+
+.text-secondary-light {
+  color: map-get($neutral-colors, 300);
+  background-color: map-get($neutral-colors, 100);
+}
+
+.text-muted-dark {
+  color: map-get($neutral-colors, 300);
+  background-color: map-get($neutral-colors, 600);
+}
+
+.text-muted-light {
+  color: map-get($neutral-colors, 200);
+  background-color: map-get($neutral-colors, 100);
+}
+
+.text-highlight-dark {
+  color: map-get($primary-colors, 200);
+  background-color: map-get($neutral-colors, 600);
+}
+
+.text-highlight-light {
+  color: map-get($primary-colors, 300);
+  background-color: map-get($neutral-colors, 100);
+}
+
+$offcanvas-bg-color: #1e1b2e; // 背景色
+$offcanvas-color: #ffffff; // 主要文字顏色
+$offcanvas-border-color: rgba(255, 255, 255, 0.08); // 邊框顏色

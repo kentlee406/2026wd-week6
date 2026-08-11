@@ -1,0 +1,21 @@
+// 3. 針對不同 Breakpoint 微調 Gutter 與 Mobile Margin
+// --------------------------------------------------
+
+// Mobile (預設區間 < 768px):
+// Margin 12px -> 利用 Container 的左右 Padding 達到左右保留 12px Margin 的效果
+.container,
+.container-fluid {
+  @include media-breakpoint-down(lg) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+// Desktop (≥ 1200px 或 ≥ 1400px，視您的 Desktop 定義而定):
+// Gutter 改為 24px
+@include media-breakpoint-up(xl) {
+  // 將 Desktop 的 Row Gutter 調整為 24px ($spacer * 1.5 = 24px)
+  .row {
+    --bs-gutter-x: 1.5rem; // 24px
+  }
+}

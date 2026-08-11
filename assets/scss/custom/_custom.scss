@@ -1,0 +1,45 @@
+.btn-subscribe-custom {
+  background-color: map-get($primary-colors, 100);
+  color: map-get($neutral-colors, 600);
+}
+
+.hero-search-custom {
+  width: 586px;
+  margin: 0 auto;
+  @media (max-width: map-get($container-max-widths, md)) {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: calc(100% - 24px);
+  }
+}
+
+.hero {
+  background-image: url("../assets/images/index-bg/index-hero-bg.png");
+  background-size: cover;
+  text-align: center;
+  padding-top: 239px;
+  padding-bottom: 239px;
+  h2 {
+    font-size: $h1-font-size;
+  }
+  p {
+    font-size: $body-font-size-xl;
+  }
+  @media (max-width: map-get($container-max-widths, md)) {
+    padding-top: 166px;
+    padding-bottom: 166px;
+    h2 {
+      font-size: $h2-font-size;
+    }
+    p {
+      font-size: $body-font-size-md;
+    }
+  }
+}
+
+.categories {
+  background-image: url("../../images/index-bg/index-tool-bg.png");
+  @media (max-width: map-get($container-max-widths, md)) {
+    background-image: url("../../images/index-bg/index-tool.png");
+  }
+}

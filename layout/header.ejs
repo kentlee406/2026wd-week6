@@ -1,4 +1,162 @@
-<h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container align-items-center">
+      <!-- 1. Logo -->
+      <a class="navbar-brand me-md-5" href="#">
+        <img
+          src="/assets/images/Logo.png"
+          alt="AI ToolVerse Logo"
+          width="152"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+      </a>
+
+      <!-- 2. 漢堡選單按鈕（手機端唯一顯示的開關） -->
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 3. 主折疊區塊：包含選單、搜尋列與會員按鈕 -->
+      <div
+        class="collapse navbar-collapse justify-content-between align-items-center"
+        id="navbarSupportedContent"
+      >
+        <ul
+          class="navbar-nav align-items-start align-items-md-center gap-2 gap-md-0 my-3 my-md-0"
+        >
+          <li class="nav-item">
+            <button
+              class="btn border-none text-light text-nowrap d-inline-flex align-items-center gap-1"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              type="button"
+              aria-controls="offcanvasExample"
+            >
+              探索AI工具
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </li>
+
+          <!-- 搜尋列（手機端展開時呈現滿版 w-100，桌機端為固定寬度） -->
+          <li class="nav-item ms-md-4 my-2 my-md-0 w-100 w-md-auto">
+            <div class="input-group search-box">
+              <span class="input-group-text bg-white border-end-0 ps-3">
+                <i class="bi bi-search text-muted"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control bg-white border-start-0 ps-2"
+                placeholder="輸入工具名稱、功能或關鍵字"
+              />
+            </div>
+          </li>
+        </ul>
+
+        <!-- 會員中心按鈕（手機端滿寬 w-100，桌面版自動隨內容縮放 w-md-auto） -->
+        <form class="my-2 my-md-0 d-none d-md-inline-flex">
+          <button class="btn rounded-pill text-light" type="button">
+            登入/註冊
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas 側邊欄 -->
+  <div
+    class="offcanvas offcanvas-end text-light bg-t100"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title" id="offcanvasExampleLabel">探索AI工具</h3>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <ul class="list-unstyled d-flex flex-column gap-2">
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            內容生成
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            視覺設計
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            影像製作
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            程式開發
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            教育與學習
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            資料分析
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            生產力工具
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="btn btn-outline-dark border-none w-100 text-start text-light"
+          >
+            音樂創作
+          </button>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-primary rounded-pill w-100">
+        登入/註冊
+      </button>
+    </div>
+  </div>
+</header>

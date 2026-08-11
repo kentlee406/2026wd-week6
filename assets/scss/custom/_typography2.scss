@@ -1,0 +1,24 @@
+// 6. 全域字距與自訂 Body Class 補強
+// --------------------------------------------------
+body {
+  letter-spacing: $letter-spacing-base;
+}
+
+// 追加符合規範的 Body 文字類別 (可替代或搭配 Bootstrap 預設 .fs-* 使用)
+.fs-body-xl {
+  font-size: $body-font-size-xl;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+.fs-body-md {
+  font-size: $body-font-size-md;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+.fs-body-sm {
+  font-size: $body-font-size-sm;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "web-layout-training-vite",
+  "name": "2026wd-week6",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,8 +15,11 @@
     "vite-plugin-ejs": "^1.7.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
+    "icons": "^1.0.0",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
     "vite-plugin-live-reload": "^3.0.2"

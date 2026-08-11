@@ -1,0 +1,19 @@
+// 1. 設定基礎圓角變數
+// --------------------------------------------------
+$border-radius-sm: 0.5rem !default; // 8px (radius-sm)
+$border-radius: 0.75rem !default; // 12px (預設 rounded / radius-md)
+$border-radius-md: 0.75rem !default; // 12px
+$border-radius-lg: 2.5rem !default; // 40px
+$border-radius-pill: 50rem !default; // 1000px 效果 (對應膠囊/圓形)
+
+// 2. 擴充 $border-radii 地圖 (讓工具類別支援指定名稱)
+// --------------------------------------------------
+$border-radii: (
+  null: $border-radius,
+  "0": 0,
+  "sm": $border-radius-sm,
+  "md": $border-radius-md,
+  "lg": $border-radius-lg,
+  "pill": $border-radius-pill,
+  "circle": 50%, // 正圓形
+) !default;
