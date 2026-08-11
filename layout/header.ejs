@@ -34,8 +34,48 @@
           class="navbar-nav align-items-start align-items-md-center gap-2 gap-md-0 my-3 my-md-0"
         >
           <li class="nav-item">
+            <!-- 桌機版：使用 dropdown 呈現工具分類 -->
+            <div class="dropdown d-none d-md-block">
+              <button
+                class="btn border-none text-light text-nowrap d-inline-flex align-items-center gap-1"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                探索AI工具
+                <i class="bi bi-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu glass-menu-dropdown mt-2 p-2">
+                <li>
+                  <a class="dropdown-item text-light" href="#">內容生成</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">視覺設計</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">影像製作</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">程式開發</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">教育與學習</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">資料分析</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">生產力工具</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">音樂創作</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 手機版：保留 offcanvas 漢堡展開方式 -->
             <button
-              class="btn border-none text-light text-nowrap d-inline-flex align-items-center gap-1"
+              class="btn border-none text-light text-nowrap d-inline-flex align-items-center gap-1 d-md-none"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               type="button"
@@ -73,7 +113,7 @@
 
   <!-- Offcanvas 側邊欄 -->
   <div
-    class="offcanvas offcanvas-end text-light bg-t100"
+    class="offcanvas offcanvas-end text-light glass-menu-offcanvas"
     tabindex="-1"
     id="offcanvasExample"
     aria-labelledby="offcanvasExampleLabel"

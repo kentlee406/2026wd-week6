@@ -9,9 +9,10 @@ $neutral-colors: (
   600: #100c24,
 );
 
+// transparent-100: 玻璃背景層、transparent-200: 玻璃邊框層
 $transparent-colors: (
-  100: rgba(255, 255, 255, 0.08),
-  200: rgba(255, 255, 255, 0.12),
+  100: rgba(255, 255, 255, 0.1),
+  200: rgba(255, 255, 255, 0.2),
 );
 
 $success-colors: (
@@ -151,6 +152,7 @@ body {
   background-color: map-get($neutral-colors, 100);
 }
 
-$offcanvas-bg-color: #1e1b2e; // 背景色
+// 與透明色票同步，確保 offcanvas 視覺規則一致
+$offcanvas-bg-color: map-get($transparent-colors, 100); // 背景色
 $offcanvas-color: #ffffff; // 主要文字顏色
-$offcanvas-border-color: rgba(255, 255, 255, 0.08); // 邊框顏色
+$offcanvas-border-color: map-get($transparent-colors, 200); // 邊框顏色

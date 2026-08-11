@@ -38,12 +38,68 @@
 }
 
 .categories {
-  background-image: url("../../images/index-bg/index-tool-bg-dec.png"),
+  background-image:
+    url("../../images/index-bg/index-tool-bg-dec.png"),
     url("../../images/index-bg/index-tool-bg.png");
   background-repeat: no-repeat, repeat;
-  background-position: right top, left top;
+  background-position:
+    right top,
+    left top;
   @media (max-width: map-get($container-max-widths, md)) {
-    background-image: url("../../images/index-bg/index-tool-bg-dec.png"),
+    background-image:
+      url("../../images/index-bg/index-tool-bg-dec.png"),
       url("../../images/index-bg/index-tool.png");
+  }
+}
+
+.glass-menu-dropdown {
+  // 桌機下拉選單的毛玻璃外觀
+  min-width: 180px;
+  border: 1px solid map-get($transparent-colors, 200);
+  background-color: map-get($transparent-colors, 100);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 0;
+
+  .dropdown-item {
+    border-radius: 0;
+    padding: 8px 12px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: map-get($neutral-colors, 0);
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }
+}
+
+.glass-menu-offcanvas {
+  // 手機側欄共用相同透明層級與模糊強度
+  border-left: 1px solid map-get($transparent-colors, 200);
+  background-color: map-get($transparent-colors, 100);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  .offcanvas-header {
+    border-bottom: 1px solid map-get($transparent-colors, 200);
+  }
+
+  .btn-close {
+    filter: invert(1);
+    opacity: 0.9;
+  }
+
+  .btn-outline-dark {
+    border-color: transparent;
+    color: map-get($neutral-colors, 0);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: map-get($neutral-colors, 0);
+      border-color: transparent;
+    }
   }
 }
