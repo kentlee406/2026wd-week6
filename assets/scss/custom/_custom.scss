@@ -53,6 +53,36 @@
   }
 }
 
+.upload-ai {
+  background-image: url("../images/index-bg/landing-highlight-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.upload-card {
+  background: transparent;
+  color: map-get($neutral-colors, 0);
+
+  &__img {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: $h5-font-size;
+    font-weight: $font-weight-bold;
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    color: map-get($neutral-colors, 200);
+    font-size: $body-font-size-md;
+    margin-bottom: 0;
+  }
+}
+
 .glass-menu-dropdown {
   // 桌機下拉選單的毛玻璃外觀
   min-width: 180px;
