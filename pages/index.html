@@ -25,8 +25,8 @@
       </div>
     </section>
     <section class="categories">
-      <div class="container">
-        <h2 class="h2 mt-8">工具分類</h2>
+      <div class="container py-8">
+        <h2 class="h2">工具分類</h2>
         <p class="cr-n200 mb-5">依據使用情境快速找到適合你的 AI 工具</p>
         <!-- 分類卡片格線：手機2欄、桌機4欄，欄距 g-4 -->
         <div class="row row-cols-2 row-cols-md-4 g-4">
@@ -111,7 +111,142 @@
         </div>
       </div>
     </section>
-    <section class="editors-pick"></section>
+    <section class="editors-pick py-8">
+      <div class="container">
+        <h2 class="h2">本月精選</h2>
+        <p class="cr-n200 mb-5">
+          不知道從哪裡開始？先看看編輯為你精選的熱門工具
+        </p>
+        <!-- 編輯精選卡片：桌機兩欄三列，手機改為 259px 橫向滑動且不顯示捲軸 -->
+        <div class="editors-pick-scroll">
+          <div class="editors-pick-grid">
+            <!-- 卡片 1：PromptLab -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">1</span>
+                <img
+                  src="/assets/images/PromptLab.png"
+                  alt="PromptLab"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">PromptLab</h3>
+                <p class="editor-card__category">內容生成</p>
+                <p class="editor-card__desc">
+                  協助你建立、整理不同的 AI
+                  Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt
+                  組合。
+                </p>
+              </div>
+            </article>
+
+            <!-- 卡片 2：VoiceNova -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">2</span>
+                <img
+                  src="/assets/images/VoiceNova.png"
+                  alt="VoiceNova"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">VoiceNova</h3>
+                <p class="editor-card__category">音樂創作</p>
+                <p class="editor-card__desc">
+                  能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast
+                  或產品展示內容。
+                </p>
+              </div>
+            </article>
+
+            <!-- 卡片 3：DesignQuick -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">3</span>
+                <img
+                  src="/assets/images/DesignQuick.png"
+                  alt="DesignQuick"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">DesignQuick</h3>
+                <p class="editor-card__category">影像製作</p>
+                <p class="editor-card__desc">
+                  讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
+                </p>
+              </div>
+            </article>
+
+            <!-- 卡片 4：SEO Radar -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">4</span>
+                <img
+                  src="/assets/images/SEO%20Radar.png"
+                  alt="SEO Radar"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">SEO Radar</h3>
+                <p class="editor-card__category">資料分析</p>
+                <p class="editor-card__desc">
+                  持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
+                </p>
+              </div>
+            </article>
+
+            <!-- 卡片 5：Meeting Notes AI -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">5</span>
+                <img
+                  src="/assets/images/Meeting%20Notes%20AI.png"
+                  alt="Meeting Notes AI"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">Meeting Notes AI</h3>
+                <p class="editor-card__category">生產力工具</p>
+                <p class="editor-card__desc">
+                  將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
+                </p>
+              </div>
+            </article>
+
+            <!-- 卡片 6：ChatFlow Builder -->
+            <article class="editor-card">
+              <div class="editor-card__media">
+                <span class="editor-card__rank">6</span>
+                <img
+                  src="/assets/images/ChatFlow%20Builder.png"
+                  alt="ChatFlow Builder"
+                  class="editor-card__icon"
+                  loading="lazy"
+                />
+              </div>
+              <div class="editor-card__content">
+                <h3 class="editor-card__title">ChatFlow Builder</h3>
+                <p class="editor-card__category">程式開發</p>
+                <p class="editor-card__desc">
+                  讓你無需撰寫程式碼，也能建立客服或內部使用的 AI
+                  聊天流程，適合需要快速部署對話型工具的團隊。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="new-in"></section>
     <section class="upload-ai"></section>
     <section class="faq"></section>

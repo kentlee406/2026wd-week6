@@ -14,7 +14,8 @@
 }
 
 .hero {
-  background-image: url("../assets/images/index-bg/index-hero-bg.png");
+  // 修正 hero 背景路徑，讓 Vite 以正確的 assets 相對路徑處理圖片
+  background-image: url("../images/index-bg/index-hero-bg.png");
   background-size: cover;
   text-align: center;
   padding-top: 239px;
@@ -120,4 +121,122 @@
   color: map-get($neutral-colors, 0);
   // 讓同列卡片等高
   height: 100%;
+}
+
+.editors-pick {
+  // 編輯精選區塊使用指定背景圖並保持整區覆蓋感
+  background-image: url("../images/index-bg/BG_editors_pick.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.editors-pick-scroll {
+  // 手機版只在區塊內水平滑動，並隱藏瀏覽器預設捲軸
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-bottom: 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.editors-pick-grid {
+  // 手機版先以橫向卡片列呈現，再由桌機切換成雙欄網格
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+.editor-card {
+  // 卡片沿用毛玻璃效果，確保與其它區塊視覺一致
+  flex: 0 0 259px;
+  width: 259px;
+  border: 1px solid map-get($transparent-colors, 200);
+  background-color: map-get($transparent-colors, 100);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 24px;
+  color: map-get($neutral-colors, 0);
+  scroll-snap-align: start;
+}
+
+.editor-card__media {
+  // 卡片左側資訊區塊，放置順位與圖示
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.editor-card__rank {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.editor-card__icon {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.editor-card__content {
+  // 內容區與圖示區留出呼吸空間
+  margin-top: 24px;
+}
+
+.editor-card__title {
+  margin-bottom: 8px;
+  font-size: $h3-font-size;
+  font-weight: 700;
+}
+
+.editor-card__category {
+  margin-bottom: 16px;
+  font-size: $body-font-size-md;
+  color: map-get($neutral-colors, 200);
+}
+
+.editor-card__desc {
+  margin-bottom: 0;
+  font-size: $body-font-size-md;
+  line-height: 1.6;
+}
+
+@media (min-width: map-get($container-max-widths, md)) {
+  .editors-pick-scroll {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .editors-pick-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  .editor-card {
+    width: auto;
+    flex: initial;
+    display: grid;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 24px;
+    min-height: 228px;
+  }
+
+  .editor-card__content {
+    margin-top: 0;
+  }
+
+  .editor-card__media {
+    min-height: 100%;
+    justify-content: flex-start;
+  }
 }
