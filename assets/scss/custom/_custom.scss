@@ -38,8 +38,12 @@
 }
 
 .categories {
-  background-image: url("../../images/index-bg/index-tool-bg.png");
+  background-image: url("../../images/index-bg/index-tool-bg-dec.png"),
+    url("../../images/index-bg/index-tool-bg.png");
+  background-repeat: no-repeat, repeat;
+  background-position: right top, left top;
   @media (max-width: map-get($container-max-widths, md)) {
-    background-image: url("../../images/index-bg/index-tool.png");
+    background-image: url("../../images/index-bg/index-tool-bg-dec.png"),
+      url("../../images/index-bg/index-tool.png");
   }
 }
