@@ -103,3 +103,21 @@
     }
   }
 }
+
+// 工具分類卡片：毛玻璃效果
+.category-card {
+  // 外框使用 transparent-200 (rgba white 20%)
+  border: 1px solid map-get($transparent-colors, 200);
+  // 卡片背景使用 transparent-100 (rgba white 10%)
+  background-color: map-get($transparent-colors, 100);
+  // 毛玻璃模糊濾鏡
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  // 繼承父層白色文字
+  color: map-get($neutral-colors, 0);
+  // 讓同列卡片等高
+  height: 100%;
+}
