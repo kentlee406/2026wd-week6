@@ -423,7 +423,167 @@
         </div>
       </div>
     </section>
-    <section class="faq py-7 py-md-8"></section>
+    <!-- 常見問題區塊 -->
+    <section class="faq py-7 py-md-8">
+      <div class="container">
+        <h2 class="h2 text-center mb-5">常見問題</h2>
+
+        <div class="accordion faq-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-1"
+                aria-expanded="true"
+                aria-controls="faq-1"
+              >
+                AI ToolVerse 是什麼？
+              </button>
+            </h3>
+            <div
+              id="faq-1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                這是一個 AI 工具商店探索平台，協助使用者快速找到各種 AI
+                工具，並提供工具評比、分類導覽和平台資訊，讓你更輕鬆比較與選擇適合自己的
+                AI 解決方案。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-2"
+                aria-expanded="false"
+                aria-controls="faq-2"
+              >
+                這裡的 AI 工具都是免費的嗎？
+              </button>
+            </h3>
+            <div
+              id="faq-2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                平台上的 AI
+                工具由不同創作者提供，可能包含免費或付費的方案。你可以在每個工具的頁面中查看詳細的定價與功能差異，選擇最適合你的方案。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-3"
+                aria-expanded="false"
+                aria-controls="faq-3"
+              >
+                訂閱 AI 工具後，我可以立即使用嗎？
+              </button>
+            </h3>
+            <div
+              id="faq-3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                訂閱後，你可以依照該工具提供的功能開始使用，例如生成內容、設計圖片、分析資料或進行自動化任務等。
+                部分工具也提供下載或線上使用方式，讓你可以立即開始體驗 AI
+                帶來的效率提升。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-4"
+                aria-expanded="false"
+                aria-controls="faq-4"
+              >
+                我可以同時訂閱幾個 AI 工具？
+              </button>
+            </h3>
+            <div
+              id="faq-4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                可以。 你可以依照需求訂閱多個不同的 AI
+                工具，每個工具都是獨立訂閱，不會互相影響。
+                你可以自由組合適合自己的 AI 工具組合。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-5"
+                aria-expanded="false"
+                aria-controls="faq-5"
+              >
+                如果我不想繼續使用某個工具，可以取消訂閱嗎？
+              </button>
+            </h3>
+            <div
+              id="faq-5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                可以。 你可以隨時在會員中心管理你的訂閱，並取消不需要的工具。
+                取消後，通常會在當前訂閱週期結束後停止服務，實際規則依各工具的方案設定為準。
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq-6"
+                aria-expanded="false"
+                aria-controls="faq-6"
+              >
+                誰可以在這裡上架 AI 工具？
+              </button>
+            </h3>
+            <div
+              id="faq-6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                任何擁有 AI 工具或服務的創作者都可以申請上架。
+                無論你是獨立開發者、團隊，或是正在測試產品市場，都可以透過平台曝光你的工具，並開始累積使用者與收入。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
