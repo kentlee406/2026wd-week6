@@ -13,6 +13,11 @@
   }
 }
 
+.exploreAI-hero {
+  background-image: url("../images/index-bg/index-hero-bg.png");
+  background-size: cover;
+}
+
 .hero {
   // 修正 hero 背景路徑，讓 Vite 以正確的 assets 相對路徑處理圖片
   background-image: url("../images/index-bg/index-hero-bg.png");
