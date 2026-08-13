@@ -320,6 +320,45 @@
   line-height: 1.6;
 }
 
+.tool-pagination {
+  .pagination {
+    gap: 12px;
+  }
+
+  .page-item {
+    .page-link {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      background-color: transparent;
+      color: map-get($neutral-colors, 0);
+      font-size: $body-font-size-md;
+      font-weight: 700;
+      line-height: 1;
+      transition: all 0.2s ease;
+
+      &:hover,
+      &:focus {
+        color: map-get($neutral-colors, 0);
+        background-color: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.4);
+        box-shadow: none;
+      }
+    }
+
+    &.active .page-link {
+      background-color: map-get($neutral-colors, 0);
+      border-color: map-get($neutral-colors, 0);
+      color: map-get($neutral-colors, 600);
+    }
+  }
+}
+
 .faq {
   background-image: url("../images/index-bg/index-new-bg.png");
   background-size: cover;
