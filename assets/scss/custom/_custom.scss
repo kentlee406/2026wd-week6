@@ -287,6 +287,10 @@
   padding: 24px;
   color: map-get($neutral-colors, 0);
   scroll-snap-align: start;
+  height: 100%;
+  @media (max-width: map-get($container-max-widths, md)) {
+    width: 100%;
+  }
 }
 
 .new-tool-card__icon {
