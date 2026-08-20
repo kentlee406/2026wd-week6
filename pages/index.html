@@ -29,9 +29,9 @@
         <h2 class="h2">工具分類</h2>
         <p class="cr-n200 mb-5">依據使用情境快速找到適合你的 AI 工具</p>
         <!-- 分類卡片格線：手機2欄、桌機4欄，欄距 g-4 -->
-        <div class="row row-cols-2 row-cols-md-4 g-4">
+        <ul class="row row-cols-2 row-cols-md-4 g-4 list-unstyled mb-0">
           <!-- 卡片 1：內容生成 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-pencil fs-3"></i>
               <h5 class="mt-3 mb-2">內容生成</h5>
@@ -39,9 +39,9 @@
                 撰寫文章、行銷文案、腳本與摘要
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 2：視覺設計 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-image fs-3"></i>
               <h5 class="mt-3 mb-2">視覺設計</h5>
@@ -49,9 +49,9 @@
                 圖像生成、修圖、插畫與視覺輔助
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 3：影像製作 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-camera-video fs-3"></i>
               <h5 class="mt-3 mb-2">影像製作</h5>
@@ -59,17 +59,17 @@
                 影片生成、字幕、剪輯與語音轉換
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 4：程式開發 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-code-slash fs-3"></i>
               <h5 class="mt-3 mb-2">程式開發</h5>
               <p class="fs-body-md cr-n200 mb-0">程式碼生成、重構與除錯輔助</p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 5：教育與學習 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-card-list fs-3"></i>
               <h5 class="mt-3 mb-2">教育與學習</h5>
@@ -77,9 +77,9 @@
                 學習筆記、題目生成與教學支援
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 6：資料分析 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-graph-up fs-3"></i>
               <h5 class="mt-3 mb-2">資料分析</h5>
@@ -87,9 +87,9 @@
                 數據整理、分析報告與洞察生成
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 7：生產力工具 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-diagram-3 fs-3"></i>
               <h5 class="mt-3 mb-2">生產力工具</h5>
@@ -97,9 +97,9 @@
                 任務管理、流程自動化與工作整合
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 8：音樂創作 -->
-          <div class="col">
+          <li class="col">
             <div class="category-card">
               <i class="bi bi-music-note-beamed fs-3"></i>
               <h5 class="mt-3 mb-2">音樂創作</h5>
@@ -107,8 +107,8 @@
                 音樂生成、編曲、混音與音效設計
               </p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="editors-pick py-7 py-md-8">
@@ -119,131 +119,143 @@
         </p>
         <!-- 編輯精選卡片：桌機兩欄三列，手機改為 259px 橫向滑動且不顯示捲軸 -->
         <div class="editors-pick-scroll">
-          <div class="editors-pick-grid">
+          <ul class="editors-pick-grid list-unstyled mb-0">
             <!-- 卡片 1：PromptLab -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">1</span>
-                <img
-                  src="/assets/images/PromptLab.png"
-                  alt="PromptLab"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">PromptLab</h3>
-                <p class="editor-card__category">內容生成</p>
-                <p class="editor-card__desc">
-                  協助你建立、整理不同的 AI
-                  Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt
-                  組合。
-                </p>
-              </div>
-            </article>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">1</span>
+                  <img
+                    src="/assets/images/PromptLab.png"
+                    alt="PromptLab"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">PromptLab</h3>
+                  <p class="editor-card__category">內容生成</p>
+                  <p class="editor-card__desc">
+                    協助你建立、整理不同的 AI
+                    Prompt，無論是寫作、設計或開發，都能快速找到最適合的 Prompt
+                    組合。
+                  </p>
+                </div>
+              </article>
+            </li>
 
             <!-- 卡片 2：VoiceNova -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">2</span>
-                <img
-                  src="/assets/images/VoiceNova.png"
-                  alt="VoiceNova"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">VoiceNova</h3>
-                <p class="editor-card__category">音樂創作</p>
-                <p class="editor-card__desc">
-                  能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast
-                  或產品展示內容。
-                </p>
-              </div>
-            </article>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">2</span>
+                  <img
+                    src="/assets/images/VoiceNova.png"
+                    alt="VoiceNova"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">VoiceNova</h3>
+                  <p class="editor-card__category">音樂創作</p>
+                  <p class="editor-card__desc">
+                    能將文字內容轉換為接近真人的語音，適合製作教學影片旁白、Podcast
+                    或產品展示內容。
+                  </p>
+                </div>
+              </article>
+            </li>
 
             <!-- 卡片 3：DesignQuick -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">3</span>
-                <img
-                  src="/assets/images/DesignQuick.png"
-                  alt="DesignQuick"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">DesignQuick</h3>
-                <p class="editor-card__category">影像製作</p>
-                <p class="editor-card__desc">
-                  讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
-                </p>
-              </div>
-            </article>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">3</span>
+                  <img
+                    src="/assets/images/DesignQuick.png"
+                    alt="DesignQuick"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">DesignQuick</h3>
+                  <p class="editor-card__category">影像製作</p>
+                  <p class="editor-card__desc">
+                    讓沒有設計背景的使用者，也能快速產出社群貼文、簡報封面與視覺素材。
+                  </p>
+                </div>
+              </article>
+            </li>
 
             <!-- 卡片 4：SEO Radar -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">4</span>
-                <img
-                  src="/assets/images/SEO%20Radar.png"
-                  alt="SEO Radar"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">SEO Radar</h3>
-                <p class="editor-card__category">資料分析</p>
-                <p class="editor-card__desc">
-                  持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
-                </p>
-              </div>
-            </article>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">4</span>
+                  <img
+                    src="/assets/images/SEO%20Radar.png"
+                    alt="SEO Radar"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">SEO Radar</h3>
+                  <p class="editor-card__category">資料分析</p>
+                  <p class="editor-card__desc">
+                    持續追蹤關鍵字排名、流量變化與技術問題，並提供清楚的優化建議，協助你逐步改善搜尋引擎表現。
+                  </p>
+                </div>
+              </article>
+            </li>
 
             <!-- 卡片 5：Meeting Notes AI -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">5</span>
-                <img
-                  src="/assets/images/Meeting%20Notes%20AI.png"
-                  alt="Meeting Notes AI"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">Meeting Notes AI</h3>
-                <p class="editor-card__category">生產力工具</p>
-                <p class="editor-card__desc">
-                  將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
-                </p>
-              </div>
-            </article>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">5</span>
+                  <img
+                    src="/assets/images/Meeting%20Notes%20AI.png"
+                    alt="Meeting Notes AI"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">Meeting Notes AI</h3>
+                  <p class="editor-card__category">生產力工具</p>
+                  <p class="editor-card__desc">
+                    將會議內容轉換成結構化筆記，標示重點與待辦事項，幫助團隊在會後快速對齊共識並持續追蹤進度。
+                  </p>
+                </div>
+              </article>
+            </li>
 
             <!-- 卡片 6：ChatFlow Builder -->
-            <article class="editor-card">
-              <div class="editor-card__media">
-                <span class="editor-card__rank">6</span>
-                <img
-                  src="/assets/images/ChatFlow%20Builder.png"
-                  alt="ChatFlow Builder"
-                  class="editor-card__icon"
-                  loading="lazy"
-                />
-              </div>
-              <div class="editor-card__content">
-                <h3 class="editor-card__title">ChatFlow Builder</h3>
-                <p class="editor-card__category">程式開發</p>
-                <p class="editor-card__desc">
-                  讓你無需撰寫程式碼，也能建立客服或內部使用的 AI
-                  聊天流程，適合需要快速部署對話型工具的團隊。
-                </p>
-              </div>
-            </article>
-          </div>
+            <li>
+              <article class="editor-card">
+                <div class="editor-card__media">
+                  <span class="editor-card__rank">6</span>
+                  <img
+                    src="/assets/images/ChatFlow%20Builder.png"
+                    alt="ChatFlow Builder"
+                    class="editor-card__icon"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="editor-card__content">
+                  <h3 class="editor-card__title">ChatFlow Builder</h3>
+                  <p class="editor-card__category">程式開發</p>
+                  <p class="editor-card__desc">
+                    讓你無需撰寫程式碼，也能建立客服或內部使用的 AI
+                    聊天流程，適合需要快速部署對話型工具的團隊。
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -256,98 +268,110 @@
 
         <!-- 手機版可左右滑動，並隱藏捲軸；md 以上改為 3x2 格線 -->
         <div class="new-in-scroll">
-          <div class="new-in-grid">
+          <ul class="new-in-grid list-unstyled mb-0">
             <!-- 卡片 1：WriteCraft AI -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/WriteCraft AI.png"
-                alt="WriteCraft AI"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">WriteCraft AI</h3>
-              <p class="new-tool-card__category">內容生成</p>
-              <p class="new-tool-card__desc">
-                快速產出文案，從社群貼文、部落格文章到產品介紹，依不同目的生成合適內容。
-              </p>
-            </article>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/WriteCraft AI.png"
+                  alt="WriteCraft AI"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">WriteCraft AI</h3>
+                <p class="new-tool-card__category">內容生成</p>
+                <p class="new-tool-card__desc">
+                  快速產出文案，從社群貼文、部落格文章到產品介紹，依不同目的生成合適內容。
+                </p>
+              </article>
+            </li>
 
             <!-- 卡片 2：PixelMind Studio -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/PixelMind Studio.png"
-                alt="PixelMind Studio"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">PixelMind Studio</h3>
-              <p class="new-tool-card__category">影像製作</p>
-              <p class="new-tool-card__desc">
-                只需輸入簡單描述，就能生成插畫、社群圖片與設計素材，適合缺乏設計資源的團隊與個人。
-              </p>
-            </article>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/PixelMind Studio.png"
+                  alt="PixelMind Studio"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">PixelMind Studio</h3>
+                <p class="new-tool-card__category">影像製作</p>
+                <p class="new-tool-card__desc">
+                  只需輸入簡單描述，就能生成插畫、社群圖片與設計素材，適合缺乏設計資源的團隊與個人。
+                </p>
+              </article>
+            </li>
 
             <!-- 卡片 3：CodePilot Pro -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/CodePilot Pro.png"
-                alt="CodePilot Pro"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">CodePilot Pro</h3>
-              <p class="new-tool-card__category">程式開發</p>
-              <p class="new-tool-card__desc">
-                專為工程師設計的 AI
-                助手，協助產生程式碼、解釋複雜邏輯，讓你專注在更高價值的開發工作。
-              </p>
-            </article>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/CodePilot Pro.png"
+                  alt="CodePilot Pro"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">CodePilot Pro</h3>
+                <p class="new-tool-card__category">程式開發</p>
+                <p class="new-tool-card__desc">
+                  專為工程師設計的 AI
+                  助手，協助產生程式碼、解釋複雜邏輯，讓你專注在更高價值的開發工作。
+                </p>
+              </article>
+            </li>
 
             <!-- 卡片 4：VideoFlow AI -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/VideoFlow AI.png"
-                alt="VideoFlow AI"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">VideoFlow AI</h3>
-              <p class="new-tool-card__category">影像製作</p>
-              <p class="new-tool-card__desc">
-                將文章或腳本轉換為影片，自動搭配畫面、字幕與音樂，適合快節奏的創作者或行銷團隊。
-              </p>
-            </article>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/VideoFlow AI.png"
+                  alt="VideoFlow AI"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">VideoFlow AI</h3>
+                <p class="new-tool-card__category">影像製作</p>
+                <p class="new-tool-card__desc">
+                  將文章或腳本轉換為影片，自動搭配畫面、字幕與音樂，適合快節奏的創作者或行銷團隊。
+                </p>
+              </article>
+            </li>
 
             <!-- 卡片 5：InsightX Analyzer -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/InsightX Analyzer.png"
-                alt="InsightX Analyzer"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">InsightX Analyzer</h3>
-              <p class="new-tool-card__category">資料分析</p>
-              <p class="new-tool-card__desc">
-                快速整理資料、產出圖表與分析摘要，幫助你從複雜數據中找出關鍵洞察。
-              </p>
-            </article>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/InsightX Analyzer.png"
+                  alt="InsightX Analyzer"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">InsightX Analyzer</h3>
+                <p class="new-tool-card__category">資料分析</p>
+                <p class="new-tool-card__desc">
+                  快速整理資料、產出圖表與分析摘要，幫助你從複雜數據中找出關鍵洞察。
+                </p>
+              </article>
+            </li>
 
             <!-- 卡片 6：AutoTasker -->
-            <article class="new-tool-card">
-              <img
-                src="/assets/images/AutoTasker.png"
-                alt="AutoTasker"
-                class="new-tool-card__icon"
-                loading="lazy"
-              />
-              <h3 class="new-tool-card__title">AutoTasker</h3>
-              <p class="new-tool-card__category">生產力工具</p>
-              <p class="new-tool-card__desc">
-                串接多種工具自動執行日常任務，減少人工操作錯誤，讓你把時間用在更重要的事情上。
-              </p>
-            </article>
-          </div>
+            <li>
+              <article class="new-tool-card">
+                <img
+                  src="/assets/images/AutoTasker.png"
+                  alt="AutoTasker"
+                  class="new-tool-card__icon"
+                  loading="lazy"
+                />
+                <h3 class="new-tool-card__title">AutoTasker</h3>
+                <p class="new-tool-card__category">生產力工具</p>
+                <p class="new-tool-card__desc">
+                  串接多種工具自動執行日常任務，減少人工操作錯誤，讓你把時間用在更重要的事情上。
+                </p>
+              </article>
+            </li>
+          </ul>
         </div>
 
         <!-- 區塊 CTA -->
@@ -366,9 +390,9 @@
         <p class="cr-n200 text-center mb-5">
           無論是小型的效率工具還是強大的生成式應用，歡迎和我們分享你的 AI 能量
         </p>
-        <div class="row row-cols-1 row-cols-md-3 g-4 g-md-5">
+        <ul class="row row-cols-1 row-cols-md-3 g-4 g-md-5 list-unstyled mb-0">
           <!-- 卡片 1：建立多元化的副業收入 -->
-          <div class="col">
+          <li class="col">
             <div class="upload-card text-center">
               <img
                 src="/assets/images/index-bg/index-income.png"
@@ -381,9 +405,9 @@
                 透過靈活的訂閱制與分潤機制，讓你的程式碼在睡覺時也能為你創造價值。我們提供完善的支付金流對接，讓獲利變得簡單透明。
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 2：獲得精準的流量支援 -->
-          <div class="col">
+          <li class="col">
             <div class="upload-card text-center">
               <img
                 src="/assets/images/index-exposure.png"
@@ -397,9 +421,9 @@
                 愛好者尋求新工具，上架即刻獲得高曝光率，讓你的作品精準觸及目標受眾。
               </p>
             </div>
-          </div>
+          </li>
           <!-- 卡片 3：加入開發者創作社群 -->
-          <div class="col">
+          <li class="col">
             <div class="upload-card text-center">
               <img
                 src="/assets/images/index-Community.png"
@@ -413,8 +437,8 @@
                 AI 開發者交流，共同定義未來的 AI 應用生態。
               </p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
         <!-- 立即上架 CTA -->
         <div class="text-center mt-5">
           <a href="#" class="btn btn-subscribe-custom rounded-pill px-4 py-2"
