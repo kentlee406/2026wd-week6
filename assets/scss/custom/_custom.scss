@@ -3,6 +3,12 @@
   color: map-get($neutral-colors, 600);
 }
 
+.explore-ai-root,
+.explore-ai-page {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 .hero-search-custom {
   width: 586px;
   margin: 0 auto;
@@ -137,6 +143,13 @@
       color: map-get($neutral-colors, 0);
       border-color: transparent;
     }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  // 桌機以上使用 dropdown 導航，不需要保留 offcanvas 節點佔位
+  .glass-menu-offcanvas {
+    display: none !important;
   }
 }
 
