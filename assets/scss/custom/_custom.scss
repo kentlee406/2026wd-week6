@@ -1,6 +1,54 @@
 .btn-subscribe-custom {
   background-color: map-get($primary-colors, 100);
   color: map-get($neutral-colors, 600);
+  border-color: map-get($primary-colors, 100);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: map-get($primary-colors, 200);
+    border-color: map-get($primary-colors, 200);
+    color: map-get($neutral-colors, 600);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn:not(:disabled):not(.disabled) {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.navbar-toggler {
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    border-color: map-get($transparent-colors, 200);
+    background-color: map-get($transparent-colors, 100);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .explore-ai-root,
@@ -411,6 +459,11 @@
     &:focus {
       box-shadow: none;
       border-color: transparent;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: rgba(255, 255, 255, 0.05);
     }
 
     &:not(.collapsed) {
