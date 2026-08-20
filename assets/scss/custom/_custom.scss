@@ -550,7 +550,7 @@
   }
 }
 
-@media (min-width: map-get($container-max-widths, md)) {
+@media (min-width: 768px) {
   .new-in-scroll {
     // md 以上改為固定網格，不再需要橫向滑動
     overflow: visible;
